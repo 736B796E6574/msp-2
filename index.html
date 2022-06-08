@@ -2,46 +2,46 @@
 <html lang="en">
 
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <script src="assets/javascript/script.js" defer></script>
-        <title>Elephant - Memory Game</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/script.js" defer></script>
+    <title>Elephant - Memory Game</title>
 </head>
 
 <body>
-        <!-- Here are the text elements that will be displayed before the board is active -->
-        <div id="pre-game">
-                <header>
-                        <h1>Elephant</h1>
-                </header>
-                <div>
-                        <h2>An elephant never forgets...</h2>
-                </div>
-                <div>
-                        <p>
-                                Flip any card and then try to find it's matching pair. Try to remember where the cards
-                                ar to
-                                finish in as few moves as you can.
-                        </p>
-                </div>
+    <!-- Here are the text elements that will be displayed before the board is active -->
+    <div id="pre-game" class="hidden">
+        <header>
+            <h1>Elephant</h1>
+        </header>
+        <div>
+            <h2>An elephant never forgets...</h2>
         </div>
+        <div>
+            <p>
+                Flip any card and then try to find it's matching pair. Try to remember where the cards
+                ar to
+                finish in as few moves as you can.
+            </p>
+        </div>
+    </div>
 
-        <!-- here are the board elements that will be created programically through javascript -->
-        <div id="game">
-                <div id="hud">
-                        <button id="start">Start</button>
-                        <div id="info">
-                                <div id="moves">0 moves</div>
-                                <div id="timer">time: 0 sec</div>
-                        </div>
-                </div>
-                <div id="board-container">
-                        <div id="board" data-dimension="4"></div>
-                        <div id="message">You won!</div>
-                </div>
+    <!-- here are the board elements that will be created programically through javascript -->
+    <div id="game">
+        <div id="hud">
+            <button id="start">Start</button>
+            <div id="info">
+                <div id="moves">0 moves</div>
+                <div id="timer">time: 0 sec</div>
+            </div>
         </div>
+        <div id="board-container">
+            <div id="board" data-dimension="4"></div>
+            <div id="message">You won!</div>
+        </div>
+    </div>
 
 </body>
 
