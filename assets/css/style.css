@@ -41,3 +41,21 @@
     transition: transform .7s cubic-bezier(.43, .02, .46, .95);
     backface-visibility: hidden;
 }
+
+/* the transform will handle the rotation of the cards when they are clicked and turn back to start position, user-select stops the user being able to select text so the card will act more like a card and not have any weird text highlighting during the game */
+.card-back {
+    font-size: 20pt;
+    text-align: center;
+    line-height: 100px;
+    background: #FDF8E6;
+    transform: rotateY(180deg) rotateZ(50deg);
+    user-select: none;
+}
+
+.card.flipped .card-front {
+    transform: rotateY(180deg) rotateZ(50deg);
+}
+
+.card.flipped .card-back {
+    transform: rotateY(0) rotateZ(0);
+}
