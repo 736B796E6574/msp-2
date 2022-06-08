@@ -11,6 +11,37 @@
 </head>
 
 <body>
+        <!-- Here are the text elements that will be displayed before the board is active -->
+        <div id="pre-game">
+                <header>
+                        <h1>Elephant</h1>
+                </header>
+                <div>
+                        <h2>An elephant never forgets...</h2>
+                </div>
+                <div>
+                        <p>
+                                Flip any card and then try to find it's matching pair. Try to remember where the cards
+                                ar to
+                                finish in as few moves as you can.
+                        </p>
+                </div>
+        </div>
+
+        <!-- here are the board elements that will be created programically through javascript -->
+        <div id="game">
+                <div id="hud">
+                        <button id="start">Start</button>
+                        <div id="info">
+                                <div id="moves">0 moves</div>
+                                <div id="timer">time: 0 sec</div>
+                        </div>
+                </div>
+                <div id="board-container">
+                        <div id="board" data-dimension="4"></div>
+                        <div id="message">You won!</div>
+                </div>
+        </div>
 
 </body>
 
