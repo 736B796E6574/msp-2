@@ -7,6 +7,37 @@
     font-family: 'Ultra', serif;
 }
 
+/* this will be added to elements by js to hide the game before the start button is pressed. the text displayed before the game starts will be hidden after that */
 .hidden {
     display: none;
+}
+
+/* this will keep the game board in the centre of the page */
+#game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* this sets the size of the cards that we'll be flipping. it also sets the cursor to a pointer to alert the user that the card is interactive */
+
+.card {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+/* this sets the transition so that it uses a cubic-bezier to look a bit more fancy than a linear transition, also keeping the bf-vis hidden so we don't see the emojis when the card is turned over */
+
+.card-front,
+.card-back {
+    position: absolute;
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+    background: #282A3A;
+    transition: transform .7s cubic-bezier(.43, .02, .46, .95);
+    backface-visibility: hidden;
 }
