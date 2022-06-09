@@ -159,7 +159,7 @@ function ready() {
     preGame.classList.add('hidden');
     again.classList.add('hidden');
     controls.classList.remove('hidden');
-    selectors.boardContainer.classList.add('flipped');
+    selectors.boardContainer.classList.remove('flipped');
     generateGame()
     attachEventListeners()
 }
