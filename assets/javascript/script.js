@@ -10,7 +10,7 @@ const selectors = {
 const again = document.getElementById('again');
 const controls = document.getElementById('controls');
 
-const state = {
+let state = {
     gameStarted: false,
     flippedCards: 0,
     totalFlips: 0,
@@ -79,8 +79,8 @@ const startGame = () => {
     state.loop = setInterval(() => {
         state.totalTime++
 
-        selectors.moves.innerText = `${state.totalFlips} moves`
-        selectors.timer.innerText = `time: ${state.totalTime} sec`
+        selectors.moves.innerText = `Moves: ${state.totalFlips}`
+        selectors.timer.innerText = `Time: ${state.totalTime} sec`
     }, 1000)
 }
 
@@ -138,6 +138,25 @@ const flipCard = card => {
     }
 }
 
+function gameOver() {
+    setTimeout(() => {
+        selectors.boardContainer.classList.add('flipped')
+        selectors.win.innerHTML = `
+            <span class="win-text">
+                You won!<br />
+                with <span class="highlight">${state.totalFlips}</span> moves<br />
+                under <span class="highlight">${state.totalTime}</span> seconds
+            </span>
+        `
+
+        clearInterval(state.loop)
+    }, 1000)
+
+    again.classList.remove('hidden');
+    controls.classList.add('hidden');
+
+}
+
 const attachEventListeners = () => {
     document.addEventListener('click', event => {
         const eventTarget = event.target
@@ -157,9 +176,30 @@ function ready() {
     const preGame = document.getElementById('pre-game');
     game.classList.remove('hidden');
     preGame.classList.add('hidden');
+
+}
+
+function reset() {
     again.classList.add('hidden');
     controls.classList.remove('hidden');
     selectors.boardContainer.classList.remove('flipped');
+    state = {
+        gameStarted: true,
+        flippedCards: 0,
+        totalFlips: 0,
+        totalTime: 0,
+        loop: null
+    }
+
+    document.querySelectorAll('.card').forEach(card => {
+        card.classList.remove('flipped')
+    })
+
+
     generateGame()
     attachEventListeners()
+    startGame()
 }
+
+generateGame()
+attachEventListeners()
