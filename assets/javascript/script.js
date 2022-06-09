@@ -69,3 +69,21 @@ const shuffle = array => {
 
     return clonedArray
 }
+
+// this listens for the cards to be flipped and runs the flipCard or startGame function as neccessary
+
+const attachEventListeners = () => {
+    document.addEventListener('click', event => {
+        const eventTarget = event.target
+        const eventParent = eventTarget.parentElement
+
+        if (eventTarget.className.includes('card') && !eventParent.className.includes('flipped')) {
+            flipCard(eventParent)
+        } else if (eventTarget.nodeName === 'BUTTON' && !eventTarget.className.includes('disabled')) {
+            startGame()
+        }
+    })
+}
+
+newGame()
+attachEventListeners()
