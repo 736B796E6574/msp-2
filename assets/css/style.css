@@ -17,6 +17,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 header {
@@ -194,4 +195,10 @@ button {
 
 .highlight {
     color: #6f00fc;
+}
+
+#elephant {
+    text-align: center;
+    width: 20%;
+    padding-top: 30px;
 }
