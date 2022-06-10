@@ -50,7 +50,7 @@ button {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 
 .controls {
@@ -109,7 +109,6 @@ button {
 
 .board-container {
     position: relative;
-
 }
 
 .board,
@@ -119,8 +118,8 @@ button {
 
 
     background: linear-gradient(135deg, #948de3 0%, #94837c 50%, #544c5c 100%);
-    transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
-    backface-visibility: hidden;
+    -webkit-transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    -webkit-backface-visibility: hidden;
 }
 
 .board {
@@ -131,11 +130,11 @@ button {
 }
 
 .board-container.flipped .board {
-    transform: rotateY(180deg) rotateZ(50deg);
+    -webkit-transform: rotateY(180deg) rotateZ(50deg);
 }
 
 .board-container.flipped .win {
-    transform: rotateY(0) rotateZ(0);
+    -webkit-transform: rotateY(0) rotateZ(0);
 }
 
 .card {
@@ -152,12 +151,12 @@ button {
     width: 100%;
     height: 100%;
     background: #282A3A;
-    transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
-    backface-visibility: hidden;
+    -webkit-transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    -webkit-backface-visibility: hidden;
 }
 
 .card-back {
-    transform: rotateY(180deg) rotateZ(50deg);
+    -webkit-transform: rotateY(180deg) rotateZ(50deg);
     font-size: 20pt;
     user-select: none;
     text-align: center;
@@ -166,11 +165,11 @@ button {
 }
 
 .card.flipped .card-front {
-    transform: rotateY(180deg) rotateZ(50deg);
+    -webkit-transform: rotateY(180deg) rotateZ(50deg);
 }
 
 .card.flipped .card-back {
-    transform: rotateY(0) rotateZ(0);
+    -webkit-transform: rotateY(0) rotateZ(0);
 }
 
 .win {
@@ -181,14 +180,14 @@ button {
     height: 100%;
     text-align: center;
     background: #FDF8E6;
-    transform: rotateY(180deg) rotateZ(50deg);
+    -webkit-transform: rotateY(180deg) rotateZ(50deg);
 }
 
 .win-text {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     font-size: 21pt;
     color: #282A3A;
 }
