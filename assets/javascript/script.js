@@ -180,26 +180,9 @@ function ready() {
 }
 
 function reset() {
-    again.classList.add('hidden');
-    controls.classList.remove('hidden');
-    selectors.boardContainer.classList.remove('flipped');
-    state = {
-        gameStarted: true,
-        flippedCards: 0,
-        totalFlips: 0,
-        totalTime: 0,
-        loop: null
-    }
-
-    document.querySelectorAll('.card').forEach(card => {
-        card.classList.remove('flipped')
-    })
-
-
-    generateGame()
-    attachEventListeners()
-    startGame()
+    location.reload();
 }
+
 
 generateGame()
 attachEventListeners()
