@@ -161,8 +161,11 @@ const gameOver = () => {
         clearInterval(state.loop)
     }, 1000)
 
-    again.classList.remove('hidden');
-    controls.classList.add('hidden');
+    setTimeout(function () {
+        again.classList.remove('hidden');
+        controls.classList.add('hidden');
+    }, 1000);
+
 
 }
 
