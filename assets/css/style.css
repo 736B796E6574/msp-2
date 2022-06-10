@@ -28,9 +28,10 @@ h1 {
     font-size: 2.8rem;
     text-align: center;
     color: white;
-    margin: 60px auto;
+    margin: 40px auto 10px;
     letter-spacing: 0.3rem;
     text-decoration: underline;
+
 }
 
 h2 {
@@ -45,6 +46,14 @@ button {
     border: 0;
     cursor: pointer;
     font-size: 18pt;
+}
+
+p {
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .game {
@@ -199,6 +208,6 @@ button {
 
 #elephant {
     text-align: center;
-    width: 20%;
+    width: 15%;
     padding-top: 30px;
 }

@@ -161,10 +161,10 @@ const gameOver = () => {
         clearInterval(state.loop)
     }, 1000)
 
-    setTimeout(function () {
-        again.classList.remove('hidden');
-        controls.classList.add('hidden');
-    }, 1000);
+
+    again.classList.remove('hidden');
+    controls.classList.add('hidden');
+    clearInterval(state.loop)
 
 
 }
@@ -187,8 +187,10 @@ const attachEventListeners = () => {
 const ready = () => {
     const game = document.getElementById('game');
     const preGame = document.getElementById('pre-game');
+    const elephant = document.getElementById('elephant');
     game.classList.remove('hidden');
     preGame.classList.add('hidden');
+    elephant.classList.add('hidden');
     startGame();
 }
 
