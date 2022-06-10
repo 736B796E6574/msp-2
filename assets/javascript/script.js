@@ -154,7 +154,7 @@ const gameOver = () => {
             <span class="win-text">
                 You won!<br />
                 with <span class="highlight">${state.totalFlips}</span> moves<br />
-                in <span class="highlight">${state.totalTime}</span> seconds
+                in <span class="highlight">${state.totalTime}</span> seconds.
             </span>
         `
 
