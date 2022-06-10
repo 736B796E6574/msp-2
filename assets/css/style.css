@@ -215,3 +215,9 @@ p {
         width: 80%;
     }
 }
+
+@media screen and (min-width: 1000px) {
+    #rules p {
+        width: 50%;
+    }
+}
