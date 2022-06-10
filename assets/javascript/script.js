@@ -18,6 +18,8 @@ let state = {
     loop: null
 }
 
+// shuffles the array of emojis
+
 const shuffle = array => {
     const clonedArray = [...array]
 
@@ -32,6 +34,8 @@ const shuffle = array => {
     return clonedArray
 }
 
+// picks some random emojis from the bank
+
 const pickRandom = (array, items) => {
     const clonedArray = [...array]
     const randomPicks = []
@@ -45,6 +49,9 @@ const pickRandom = (array, items) => {
 
     return randomPicks
 }
+
+// generates the board elements and calls the functions to shuffle and randomize the emojis to fill the board
+
 
 const generateGame = () => {
     const dimensions = selectors.board.getAttribute('data-dimension')
@@ -71,7 +78,7 @@ const generateGame = () => {
 
     selectors.board.replaceWith(parser.querySelector('.board'))
 }
-
+// gets the clock ticking and displays the moves made
 const startGame = () => {
     state.gameStarted = true
     selectors.start.classList.add('disabled')
@@ -84,6 +91,8 @@ const startGame = () => {
     }, 1000)
 }
 
+// turns the cards back over if they are not matched
+
 const flipBackCards = () => {
     document.querySelectorAll('.card:not(.matched)').forEach(card => {
         card.classList.remove('flipped')
@@ -92,13 +101,11 @@ const flipBackCards = () => {
     state.flippedCards = 0
 }
 
+// adds matched class to cards if they are the same emoji and flips them back over after 1 second if they are not
+
 const flipCard = card => {
     state.flippedCards++
     state.totalFlips++
-
-    if (!state.gameStarted) {
-        startGame()
-    }
 
     if (state.flippedCards <= 2) {
         card.classList.add('flipped')
@@ -138,7 +145,9 @@ const flipCard = card => {
     }
 }
 
-function gameOver() {
+// displays the game over screen by flipping the game board over and shows the play again button 
+
+const gameOver = () => {
     setTimeout(() => {
         selectors.boardContainer.classList.add('flipped')
         selectors.win.innerHTML = `
@@ -170,16 +179,18 @@ const attachEventListeners = () => {
     })
 }
 
+// hides the pre-game screen and shows the game screen. starts the game timer
 
-function ready() {
+const ready = () => {
     const game = document.getElementById('game');
     const preGame = document.getElementById('pre-game');
     game.classList.remove('hidden');
     preGame.classList.add('hidden');
-
+    startGame();
 }
 
-function reset() {
+// reloads the page
+const reset = () => {
     location.reload();
 }
 
