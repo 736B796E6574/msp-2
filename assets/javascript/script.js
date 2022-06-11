@@ -9,6 +9,7 @@ const selectors = {
 
 const again = document.getElementById('again');
 const controls = document.getElementById('controls');
+const readyButton = document.getElementById('ready');
 
 let state = {
     gameStarted: false,
@@ -173,10 +174,8 @@ const attachEventListeners = () => {
 const ready = () => {
     const game = document.getElementById('game');
     const preGame = document.getElementById('pre-game');
-    const elephant = document.getElementById('elephant');
     game.classList.remove('hidden');
     preGame.classList.add('hidden');
-    elephant.classList.add('hidden');
     startGame();
 };
 
@@ -187,3 +186,5 @@ const reset = () => {
 
 generateGame();
 attachEventListeners();
+again.addEventListener('click', reset);
+readyButton.addEventListener('click', ready);
