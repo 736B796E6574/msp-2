@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
 
+/* resets global margin and padding and adds a global font and border box setting */
 * {
     padding: 0;
     margin: 0;
@@ -56,6 +57,7 @@ p {
     padding: 10px;
 }
 
+/* centres the gameboard on the screen */
 .game {
     position: absolute;
     top: 50%;
@@ -121,6 +123,7 @@ p {
     position: relative;
 }
 
+/* sets a cubic bezier to make the turning of the board when you win more interesting than a linear transform */
 .board,
 .win {
     border-radius: 5px;
@@ -137,6 +140,7 @@ p {
     grid-gap: 20px;
 }
 
+/* tells the board to flip over */
 .board-container.flipped .board {
     -webkit-transform: rotateY(180deg) rotateZ(50deg);
 }
@@ -145,6 +149,7 @@ p {
     -webkit-transform: rotateY(0) rotateZ(0);
 }
 
+/* we are using pointer cursors to alert the user to interactivity */
 .card {
     position: relative;
     width: 50px;
@@ -152,6 +157,7 @@ p {
     cursor: pointer;
 }
 
+/* the styles for the cards most notably the backface visibility to be hidden. I discovered a bug in safari hence the webkit */
 .card-front,
 .card-back {
     position: absolute;
@@ -172,6 +178,7 @@ p {
     background: #FDF8E6;
 }
 
+/* webkit for safari support */
 .card.flipped .card-front {
     -webkit-transform: rotateY(180deg) rotateZ(50deg);
 }
@@ -180,6 +187,7 @@ p {
     -webkit-transform: rotateY(0) rotateZ(0);
 }
 
+/* flips over the board on winning the game. webkit needed again for safari */
 .win {
     position: absolute;
     top: 0;
@@ -204,11 +212,7 @@ p {
     color: #6f00fc;
 }
 
-#elephant {
-    text-align: center;
-    width: 15%;
-    padding-top: 30px;
-}
+/* adjusting size of the rules container for different screen sizes */
 
 @media screen and (max-width: 480px) {
     #rules p {

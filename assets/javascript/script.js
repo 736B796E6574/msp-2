@@ -1,3 +1,4 @@
+// from tutorial https://www.webtips.dev/memory-game-in-javascript
 const selectors = {
     boardContainer: document.querySelector('.board-container'),
     board: document.querySelector('.board'),
@@ -11,6 +12,7 @@ const again = document.getElementById('again');
 const controls = document.getElementById('controls');
 const readyButton = document.getElementById('ready');
 
+// from tutorial https://www.webtips.dev/memory-game-in-javascript
 let state = {
     gameStarted: false,
     flippedCards: 0,
@@ -19,8 +21,8 @@ let state = {
     loop: null
 };
 
-// shuffles the array of emojis
-
+/**shuffles the array of emojis */
+// from tutorial https://www.webtips.dev/memory-game-in-javascript
 const shuffle = array => {
     const clonedArray = [...array];
 
@@ -33,8 +35,8 @@ const shuffle = array => {
     return clonedArray;
 };
 
-// picks some random emojis from the bank
-
+/**picks some random emojis from the bank */
+// from tutorial https://www.webtips.dev/memory-game-in-javascript
 const pickRandom = (array, items) => {
     const clonedArray = [...array];
     const randomPicks = [];
@@ -47,9 +49,8 @@ const pickRandom = (array, items) => {
     return randomPicks;
 };
 
-// generates the board elements and calls the functions to shuffle and randomize the emojis to fill the board
-
-
+/**generates the board elements and calls the functions to shuffle and randomize the emojis to fill the board */
+// from tutorial https://www.webtips.dev/memory-game-in-javascript
 const generateGame = () => {
     const dimensions = selectors.board.getAttribute('data-dimension');
 
@@ -74,7 +75,8 @@ const generateGame = () => {
     selectors.board.replaceWith(parser.querySelector('.board'));
 };
 
-// gets the clock ticking and displays the moves made
+/** gets the clock ticking and displays the moves made*/
+// from tutorial https://www.webtips.dev/memory-game-in-javascript but cleaned up by me
 const startGame = () => {
     state.gameStarted = true;
     selectors.start.classList.add('disabled');
@@ -85,8 +87,8 @@ const startGame = () => {
     }, 1000);
 };
 
-// turns the cards back over if they are not matched
-
+/** turns the cards back over if they are not matched*/
+// from tutorial https://www.webtips.dev/memory-game-in-javascript
 const flipBackCards = () => {
     document.querySelectorAll('.card:not(.matched)').forEach(card => {
         card.classList.remove('flipped');
@@ -94,8 +96,8 @@ const flipBackCards = () => {
     state.flippedCards = 0;
 };
 
-// adds matched class to cards if they are the same emoji and flips them back over after 1 second if they are not
-
+/**adds matched class to cards if they are the same emoji and flips them back over after 1 second if they are not */
+// from tutorial https://www.webtips.dev/memory-game-in-javascript
 const flipCard = card => {
     state.flippedCards++;
     state.totalFlips++;
@@ -117,7 +119,8 @@ const flipCard = card => {
         }, 1000);
     }
 
-    // If there are no more cards that we can flip, we won the game
+    /**If there are no more cards that we can flip, we won the game */
+    // from tutorial https://www.webtips.dev/memory-game-in-javascript but cleaned up by me
     if (!document.querySelectorAll('.card:not(.flipped)').length) {
         setTimeout(() => {
             selectors.boardContainer.classList.add('flipped');
@@ -136,26 +139,8 @@ const flipCard = card => {
     }
 };
 
-// displays the game over screen by flipping the game board over and shows the play again button 
-
-const gameOver = () => {
-    setTimeout(() => {
-        selectors.boardContainer.classList.add('flipped');
-        selectors.win.innerHTML = `
-            <span class="win-text">
-                You won!<br />
-                with <span class="highlight">${state.totalFlips}</span> moves<br />
-                in <span class="highlight">${state.totalTime}</span> seconds.
-            </span>
-        `;
-
-        clearInterval(state.loop);
-    }, 1000);
-    again.classList.remove('hidden');
-    controls.classList.add('hidden');
-    clearInterval(state.loop);
-};
-
+/**listens for card to be flipped  */
+// from tutorial https://www.webtips.dev/memory-game-in-javascript but edited up by me
 const attachEventListeners = () => {
     document.addEventListener('click', event => {
         const eventTarget = event.target;
@@ -163,14 +148,12 @@ const attachEventListeners = () => {
 
         if (eventTarget.className.includes('card') && !eventParent.className.includes('flipped')) {
             flipCard(eventParent);
-        } else if (eventTarget.nodeName === 'BUTTON' && !eventTarget.className.includes('disabled')) {
-            startGame();
         }
     });
 };
 
-// hides the pre-game screen and shows the game screen. starts the game timer
 
+/**hides the pre-game screen and shows the game screen. starts the game timer */
 const ready = () => {
     const game = document.getElementById('game');
     const preGame = document.getElementById('pre-game');
@@ -179,7 +162,7 @@ const ready = () => {
     startGame();
 };
 
-// reloads the page
+/**reloads the page */
 const reset = () => {
     location.reload();
 };
