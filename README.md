@@ -6,4 +6,8 @@ The game is not very difficult and is aimed at people of all ages that have a fe
 
 ![Screenshot 2022-06-16 at 22 21 12](https://user-images.githubusercontent.com/98256205/174167483-edb413b4-3012-4853-835d-bbe8ceff3e00.png)
 
+## Features
+
+### Navigation
+
 
