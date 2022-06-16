@@ -12,11 +12,11 @@ The game is not very difficult and is aimed at people of all ages that have a fe
 
 The app has 3 main screens as listed below;
 
--The pre-game screen: Hosting the logo, rules and button to begin game.
+- The pre-game screen: Hosting the logo, rules and button to begin game.
 
--The game screen: Hosting the game-board, timer and move counter.
+- The game screen: Hosting the game-board, timer and move counter.
 
--The post-game screen: Displaying the performance stats and a button to restart the app.
+- The post-game screen: Displaying the performance stats and a button to restart the app.
 
 ### Navigation
 
@@ -28,6 +28,6 @@ The app has 3 main screens as listed below;
 
 ### Gameboard
 ![Screenshot 2022-06-16 at 22 37 07](https://user-images.githubusercontent.com/98256205/174170108-505a268a-d3ed-4a4c-81e3-9969cd2f444d.png)
--The gameboard is a 4x4 board of cards which can be flipped over with a click. Displayed here are a matching pair which will stay overturned when found to be matching. Were they not matching they would turn back over to the starting position.
+- The gameboard is a 4x4 board of cards which can be flipped over with a click. Displayed here are a matching pair which will stay overturned when found to be matching. Were they not matching they would turn back over to the starting position.
  
 
