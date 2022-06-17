@@ -1,6 +1,6 @@
 # Elephant
 
-Elephant is a flip-the-card style memory game. The aim of the game is to flip 2 cards and hopefully find a pair. When you find all of the pairs the game is over and you have won. This quicker you win the better you played. This is measured in moves made and with a timer. The live link can be found here: [Elephant Memory Game](https://martin-mcinerney.github.io/msp-2/)
+Elephant is a flip-the-card style memory game. The aim of the game is to flip 2 cards and hopefully find a pair. When you find all of the pairs the game is over and you have won. This quicker you win the better you played. This is measured in moves made and with a timer. The live link can be found here: [Elephant Memory Game](https://martin-mcinerney.github.io/msp-2/).
 
 The game is not very difficult and is aimed at people of all ages that have a few minutes to kill.
 
@@ -59,7 +59,7 @@ The app has 3 main screens as listed below;
 - The W3 CSS Validator found no errors in the CSS code.
 
 ## Javascript
-- The JShint validator found no errors in the Javascript code.
+- The JSHint validator found no errors in the Javascript code.
 
 ## Accessibility
 ![Screenshot 2022-06-17 at 09 19 22](https://user-images.githubusercontent.com/98256205/174258839-d4bf4d30-3554-4a0a-8df1-0990f8815130.png)
@@ -72,7 +72,7 @@ This site was deployed using GitHub pages. The steps are as follows:
 - From the source section drop-down menu, select the master branch.
 - Once the master branch had been selected, the page provided the link to the completed website.
 
-The live link can be found here: [Elephant Memory Game](https://martin-mcinerney.github.io/msp-2/)
+The live link can be found here: [Elephant Memory Game](https://martin-mcinerney.github.io/msp-2/).
 
 ## Credits
 
