@@ -62,6 +62,9 @@ The app has 3 main screens as listed below;
 - The JShint validator found no errors in the Javascript code.
 
 ## Accessibility
+![Screenshot 2022-06-17 at 09 19 22](https://user-images.githubusercontent.com/98256205/174258839-d4bf4d30-3554-4a0a-8df1-0990f8815130.png)
+- I confirmed that the site had a good accessibility score by using the Chrome Lighthouse tool.
+
 
 
 
