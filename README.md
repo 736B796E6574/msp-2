@@ -45,11 +45,21 @@ The app has 3 main screens as listed below;
 - I have confirmed that the interactive items work on every page.
 
 ## Bugs
-
+### Solved Bugs
 - I encountered a few bugs whilst developing this app. Whilst testing on iPhone I discovered that there was not support on Safari for the transform property in css. After some research I found that the webkit property could be used to add support for these browsers.
+
+### Unsolved Bugs
 - I tried to write a function that would reset the state of the gameboard rather than reloading the page but I was unable to get the board to reset and ammend the cards with a new set. In the interest of ensuring the MVP I elected to create a button with a reload function instead. 
 
+## Validator Testing
+## HTML
+- The W3 HTML validator found no errors in the HTML code.
 
+## CSS
+- The W3 CSS Validator found no errors in the CSS code.
+
+## Javascript
+- The JShint validator found no errors in the Javascript code.
 
 
 
