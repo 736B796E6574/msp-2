@@ -35,6 +35,22 @@ The app has 3 main screens as listed below;
 
 ### Win Message
 ![Screenshot 2022-06-17 at 08 00 45](https://user-images.githubusercontent.com/98256205/174243549-6301b23e-09b7-4167-a4c0-9b7f3e91912f.png)
-- Here a message is displayed to the user upon cmpletion of the game. It displays their final move count and time taken.
+- Here a message is displayed to the user upon completion of the game. It displays their final move count and time taken.
+
+## Testing
+
+- I have tested the website on Chrome, Firefox and Safari.
+
+- I have tested the site at different screen sizes using Chrome Developer Tools.
+
+- I have given the site to users for feedback on the experience.
+
+- I have confirmed that the interactive items work on every page.
+
+## Bugs
+
+
+
+
 
 
