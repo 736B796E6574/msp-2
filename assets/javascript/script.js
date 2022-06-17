@@ -152,7 +152,6 @@ const attachEventListeners = () => {
     });
 };
 
-
 /**hides the pre-game screen and shows the game screen. starts the game timer */
 const ready = () => {
     const game = document.getElementById('game');
