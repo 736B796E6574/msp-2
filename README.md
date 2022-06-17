@@ -29,5 +29,10 @@ The app has 3 main screens as listed below;
 ### Gameboard
 ![Screenshot 2022-06-16 at 22 37 07](https://user-images.githubusercontent.com/98256205/174170108-505a268a-d3ed-4a4c-81e3-9969cd2f444d.png)
 - The gameboard is a 4x4 board of cards which can be flipped over with a click. Displayed here are a matching pair which will stay overturned when found to be matching. Were they not matching they would turn back over to the starting position.
- 
+
+### Stats
+![Screenshot 2022-06-16 at 22 37 17](https://user-images.githubusercontent.com/98256205/174241420-c1ef5925-12b2-40f0-8993-cb696674d709.png)
+- Here the timer is displayed. It starts when the button is pressed on the pre-game screen.
+- A move counter is also displayed which increments each time a card is turned over by the user. 
+
 
