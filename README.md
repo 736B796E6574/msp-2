@@ -40,14 +40,14 @@ The app has 3 main screens as listed below;
 ## Testing
 
 - I have tested the website on Chrome, Firefox and Safari.
-
 - I have tested the site at different screen sizes using Chrome Developer Tools.
-
 - I have given the site to users for feedback on the experience.
-
 - I have confirmed that the interactive items work on every page.
 
 ## Bugs
+
+- I encountered a few bugs whilst developing this app. Whilst testing on iPhone I discovered that there was not support on Safari for the transform property in css. After some research I found that the webkit property could be used to add support for these browsers.
+- 
 
 
 
