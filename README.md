@@ -61,7 +61,7 @@ The app has 3 main screens as listed below;
 ## Javascript
 - The JShint validator found no errors in the Javascript code.
 
-## Accesibility
+## Accessibility
 
 
 
