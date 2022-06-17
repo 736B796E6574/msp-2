@@ -13,9 +13,7 @@ The game is not very difficult and is aimed at people of all ages that have a fe
 The app has 3 main screens as listed below;
 
 - The pre-game screen: Hosting the logo, rules and button to begin game.
-
 - The game screen: Hosting the game-board, timer and move counter.
-
 - The post-game screen: Displaying the performance stats and a button to restart the app.
 
 ### Navigation
@@ -34,5 +32,9 @@ The app has 3 main screens as listed below;
 ![Screenshot 2022-06-16 at 22 37 17](https://user-images.githubusercontent.com/98256205/174241420-c1ef5925-12b2-40f0-8993-cb696674d709.png)
 - Here the timer is displayed. It starts when the button is pressed on the pre-game screen.
 - A move counter is also displayed which increments each time a card is turned over by the user. 
+
+### Win Message
+![Screenshot 2022-06-17 at 08 00 45](https://user-images.githubusercontent.com/98256205/174243549-6301b23e-09b7-4167-a4c0-9b7f3e91912f.png)
+- Here a message is displayed to the user upon cmpletion of the game. It displays their final move count and time taken.
 
 
