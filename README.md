@@ -71,8 +71,11 @@ This site was deployed using GitHub pages. The steps are as follows:
 - In the GitHub repository, navigate to the settings tab.
 - From the source section drop-down menu, select the master branch.
 - Once the master branch had been selected, the page provided the link to the completed website.
-- The live link can be found here: [Elephant Memory Game](https://martin-mcinerney.github.io/msp-2/)
 
+The live link can be found here: [Elephant Memory Game](https://martin-mcinerney.github.io/msp-2/)
 
+## Credits
+
+I learned how to build a memory game from [this](https://www.webtips.dev/memory-game-in-javascript) tutorial. It is kindly provided by [www.webtips.dev](https://www.webtips.dev). I have credited them in the code comments where applicable. 
 
 
