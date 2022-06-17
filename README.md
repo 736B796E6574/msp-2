@@ -76,6 +76,6 @@ The live link can be found here: [Elephant Memory Game](https://martin-mcinerney
 
 ## Credits
 
-I learned how to build a memory game from [this](https://www.webtips.dev/memory-game-in-javascript) tutorial. It is kindly provided by [www.webtips.dev](https://www.webtips.dev). I have credited them in the code comments where applicable. 
+- I learned how to build a memory game from [this](https://www.webtips.dev/memory-game-in-javascript) tutorial. It is kindly provided by [www.webtips.dev](https://www.webtips.dev). I have credited them in the code comments where applicable. 
 
-
+- I got the Emojis by pressing CTRL+CMD+SPACE on Mac OS.
