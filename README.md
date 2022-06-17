@@ -47,7 +47,7 @@ The app has 3 main screens as listed below;
 ## Bugs
 
 - I encountered a few bugs whilst developing this app. Whilst testing on iPhone I discovered that there was not support on Safari for the transform property in css. After some research I found that the webkit property could be used to add support for these browsers.
-- 
+- I tried to write a function that would reset the state of the gameboard rather than reloading the page but I was unable to get the board to reset and ammend the cards with a new set. In the interest of ensuring the MVP I elected to create a button with a reload function instead. 
 
 
 
